@@ -30,19 +30,29 @@ int cliente()
 	{//inicio de los menus
 case 1: {//inicio del menu retiro
 	retiro();
-case 2: {//inicio del caso 2
+	break;
+}
+case 2: {//inicio de los menus abono 
 	abono();
-case 3:{
+	break;
+}
+case 3:{//inicio de la consulta
 	consulta();
-	case 4:{
+	break;
+}
+	case 4:{//inicio de menus de pagos
 		pagoDeServicios();
+		break;
+	}
 	case 5:{
 		system("cls");
 		printf("Gracias por utilizar");
 		break;
 	}
-default:printf("Opcion NO VALIDA");		
+default:printf("Opcion NO VALIDA");	
+break;	
 }//fin del switch principal
+}
 }
 else printf("Acceso denegado");
 Fin:
@@ -84,6 +94,7 @@ if(r3==1)
 goto Inicio;
 else
 goto Fin;
+break;
 }
 case 3:{
 saldo_n=saldo-1000;
@@ -95,6 +106,7 @@ if(r3==1)
 goto Inicio;
 else
 goto Fin;
+break;
 }
 case 4:{
 saldo_n=saldo-3000;
@@ -106,6 +118,7 @@ if(r3==1)
 goto Inicio;
 else
 goto Fin;
+break;
 }
 case 5:{
 	int c_r;
@@ -291,6 +304,7 @@ void pagoDeServicios(){
 			    	else 
 			    	goto Fin;
 			    }
+			    break;
 				}
 				case 2:{
 				Regresar1:
@@ -321,7 +335,7 @@ void pagoDeServicios(){
 			    	goto Fin;
 			    }
 				}
-				
+				break;
 				case 3:{
 				Regresar2:
 				printf("teclee la cantida a pagar");
